@@ -47,6 +47,7 @@ Patterns are plain JSON, so you can write them by hand or create them in the edi
 
 ```json
 {
+  "version": 1,
   "id": "spiral-bloom",
   "name": "Spiral Bloom",
   "duration": 10,
@@ -62,6 +63,8 @@ Patterns are plain JSON, so you can write them by hand or create them in the edi
   ]
 }
 ```
+
+Time is in seconds, speed in pixels per second and angles in degrees (0° points right, clockwise is positive). Emitter types: `ring` (bullets evenly spaced around 360°), `spread` (a fan of `spread` degrees, optionally `aimed` at the player) and `spiral` (`streams` rotating arms). Every field is validated with [zod](https://zod.dev) and invalid files produce readable errors such as `emitters[0].speed: Too small: expected number to be >=0`.
 
 ## 🛠️ Tech stack
 
@@ -86,6 +89,8 @@ gensokyo-danmaku-studio/
 
 ## 🚀 Getting started
 
+Requires **Node 22+** and **pnpm 10** (`npm install -g pnpm`).
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/gensokyo-danmaku-studio.git
 cd gensokyo-danmaku-studio
@@ -94,7 +99,12 @@ pnpm install
 pnpm dev:editor   # Run the editor
 pnpm dev:game     # Run the game
 pnpm test         # Run tests
+pnpm lint         # Lint
+pnpm typecheck    # Type-check every package
+pnpm build        # Build everything
 ```
+
+In the game demo, press `1`–`4` to switch between the patterns in `/patterns` and `R` to restart the current one. The HUD shows FPS and the live bullet count; pattern `4` is a stress test that fills the bullet pool.
 
 ## 🎮 Controls
 
