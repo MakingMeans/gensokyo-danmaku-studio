@@ -1,0 +1,10 @@
+# Normalize line endings to LF in the repository regardless of the contributor OS.
+* text=auto eol=lf
+
+# Binary assets must never be touched.
+*.png binary
+*.gif binary
+*.jpg binary
+*.ogg binary
+*.wav binary
+*.mp3 binary
