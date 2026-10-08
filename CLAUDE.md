@@ -121,6 +121,7 @@ Do not start a stage until the previous one is done and I approve it.
 
 **Stage 3 — Game**
 - Boss with 2–3 spell cards loaded from `/patterns`, shooting (`Z`), bombs (`X`), lives, score, pause (`Esc`), win/lose screens.
+- Key rebinding: a controls menu (opened from the pause menu) listing every action with its current key. Click an action, press a key, done; it persists in `localStorage`. One key per action. If the key is already bound to another action, the two actions swap keys. Include a "Restore defaults" button. Keep the binding logic in `engine/src/input` (pure, tested) and the storage and UI in `game`.
 
 **Stage 4 — Extras**
 - Shareable pattern URLs, example gallery, "Test Play" in the editor, sound effects, GitHub Pages deployment polish, README GIFs.
