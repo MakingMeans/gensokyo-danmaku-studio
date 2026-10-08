@@ -1,0 +1,14 @@
+{
+  "name": "@gds/editor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Visual spell card editor built on @gds/engine. Implemented in Stage 2.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@gds/engine": "workspace:*"
+  }
+}

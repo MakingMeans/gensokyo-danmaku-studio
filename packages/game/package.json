@@ -1,0 +1,17 @@
+{
+  "name": "@gds/game",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playable boss fight built on @gds/engine with vanilla TypeScript and Canvas.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@gds/engine": "workspace:*"
+  }
+}

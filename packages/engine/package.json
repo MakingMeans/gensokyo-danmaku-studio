@@ -1,0 +1,17 @@
+{
+  "name": "@gds/engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Framework-agnostic danmaku engine: simulation, bullet pool, emitters, collisions, pattern schema and Canvas renderer.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  }
+}
