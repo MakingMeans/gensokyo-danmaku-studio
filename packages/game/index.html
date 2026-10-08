@@ -15,6 +15,7 @@
         overflow: hidden;
       }
       #app {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -22,6 +23,38 @@
       }
       canvas {
         image-rendering: pixelated;
+        display: block;
+      }
+      .hud {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        min-width: 140px;
+        padding: 8px 10px;
+        background: rgba(0, 0, 0, 0.55);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
+        font-size: 13px;
+        line-height: 1.5;
+        pointer-events: none;
+        user-select: none;
+      }
+      .hud-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .hud-row span {
+        opacity: 0.7;
+      }
+      .hud-pattern {
+        margin-top: 6px;
+        color: #ffb3c6;
+      }
+      .hud-help {
+        margin-top: 4px;
+        font-size: 11px;
+        opacity: 0.6;
       }
     </style>
   </head>

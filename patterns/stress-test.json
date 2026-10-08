@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "stress-test",
+  "name": "Stress Test",
+  "duration": 30,
+  "emitters": [
+    {
+      "type": "ring",
+      "start": 0,
+      "interval": 0.1,
+      "bullets": 180,
+      "speed": 60,
+      "spin": 7,
+      "sprite": "rice-blue"
+    },
+    {
+      "type": "ring",
+      "start": 0.05,
+      "interval": 0.1,
+      "bullets": 180,
+      "speed": 45,
+      "angle": 1,
+      "spin": -5,
+      "sprite": "ball-purple"
+    }
+  ]
+}
