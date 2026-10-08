@@ -5,3 +5,8 @@ export * from './pattern/parse';
 export * from './math/rng';
 export * from './math/angles';
 export * from './sim/bulletPool';
+export * from './sim/emitterMath';
+export * from './sim/emitter';
+export * from './sim/player';
+export * from './sim/collision';
+export * from './sim/simulation';
