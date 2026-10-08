@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "id": "spiral-bloom",
+  "name": "Spiral Bloom",
+  "duration": 12,
+  "emitters": [
+    {
+      "type": "ring",
+      "start": 0,
+      "interval": 0.2,
+      "bullets": 24,
+      "speed": 120,
+      "acceleration": 0,
+      "angle": 0,
+      "spin": 15,
+      "aimed": false,
+      "sprite": "rice-red"
+    },
+    {
+      "type": "ring",
+      "start": 1,
+      "interval": 0.4,
+      "bullets": 12,
+      "speed": 70,
+      "acceleration": 20,
+      "angle": 15,
+      "spin": -25,
+      "sprite": "ball-blue"
+    }
+  ]
+}

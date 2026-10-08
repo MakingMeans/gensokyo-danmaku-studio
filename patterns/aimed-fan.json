@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "id": "aimed-fan",
+  "name": "Aimed Fan",
+  "duration": 10,
+  "emitters": [
+    {
+      "type": "spread",
+      "start": 0,
+      "interval": 0.6,
+      "bullets": 7,
+      "spread": 60,
+      "speed": 180,
+      "aimed": true,
+      "sprite": "ball-red"
+    },
+    {
+      "type": "spread",
+      "start": 0.3,
+      "interval": 0.6,
+      "bullets": 5,
+      "spread": 30,
+      "speed": 240,
+      "aimed": true,
+      "sprite": "star-yellow"
+    }
+  ]
+}

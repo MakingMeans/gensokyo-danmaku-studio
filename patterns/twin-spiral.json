@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "twin-spiral",
+  "name": "Twin Spiral",
+  "duration": 15,
+  "emitters": [
+    {
+      "type": "spiral",
+      "start": 0,
+      "interval": 0.04,
+      "streams": 2,
+      "speed": 140,
+      "spin": 120,
+      "sprite": "rice-blue"
+    },
+    {
+      "type": "spiral",
+      "start": 0,
+      "interval": 0.04,
+      "streams": 2,
+      "angle": 90,
+      "speed": 140,
+      "spin": -120,
+      "sprite": "rice-green"
+    }
+  ]
+}
