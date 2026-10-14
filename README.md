@@ -70,6 +70,8 @@ Time is in seconds, speed in pixels per second and angles in degrees (0° points
 
 - **TypeScript**
 - **HTML5 Canvas** for rendering
+- **React** for the editor UI; the game is vanilla TypeScript
+- **zod** for the pattern schema
 - **Vite** for development and builds
 - **pnpm workspaces** for the monorepo
 - **Vitest** for testing
@@ -105,6 +107,8 @@ pnpm build        # Build everything
 ```
 
 In the game demo, press `1`–`4` to switch between the patterns in `/patterns` and `R` to restart the current one. The HUD shows FPS and the live bullet count; pattern `4` is a stress test that fills the bullet pool.
+
+In the editor, pick **Load example…** to start from one of the shared patterns, or build one from scratch: add emitter layers, drag the sliders and watch the preview update. Move the mouse over the preview to place the player target that `aimed` emitters shoot at. Invalid values are listed with their JSON path while the preview keeps the last valid pattern. Use **Copy** or **Download** to export, and paste or open a file to import. Your draft is saved in the browser, so a reload does not lose it.
 
 ## 🎮 Controls
 

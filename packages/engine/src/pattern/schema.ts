@@ -127,6 +127,8 @@ export type Pattern = z.infer<typeof patternSchema>;
 /** The loose shape accepted as input, before defaults are applied. */
 export type PatternInput = z.input<typeof patternSchema>;
 export type Emitter = z.infer<typeof emitterSchema>;
+/** The loose emitter shape accepted as input, before defaults are applied. */
+export type EmitterInput = z.input<typeof emitterSchema>;
 export type EmitterType = Emitter['type'];
 export type RingEmitter = z.infer<typeof ringEmitterSchema>;
 export type SpreadEmitter = z.infer<typeof spreadEmitterSchema>;

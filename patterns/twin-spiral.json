@@ -18,8 +18,8 @@
       "start": 0,
       "interval": 0.04,
       "streams": 2,
-      "angle": 90,
       "speed": 140,
+      "angle": 90,
       "spin": -120,
       "sprite": "rice-green"
     }

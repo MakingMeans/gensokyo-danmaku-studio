@@ -1,6 +1,7 @@
 // @ts-check
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
+import reactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -31,6 +32,10 @@ export default tseslint.config(
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     },
+  },
+  {
+    files: ['packages/editor/src/**/*.{ts,tsx}'],
+    extends: [reactHooks.configs.flat.recommended],
   },
   prettier,
 );
